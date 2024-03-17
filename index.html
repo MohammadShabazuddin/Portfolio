@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5c0a983157.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ----------------Header---------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo3.png" class="logo">
+                <ul id="sidemenu" >
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <!-- <li><a href="#">Projects</a></li> -->
+                    <li><a href="#portfolio">Portfilio</a></li>
+                    <!-- <li><a href="#">Work</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1> Hi, My Name is <br> <span> Shabazuddin Mohammad</span></h1>
+            </div>
+        </div>
+        <!-- ---------------About me------------------- -->
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/unnamed.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I hold a Master's degree in Computer Science from Florida International University, where I've
+                        had the opportunity to embark on a diverse range of coding projects spanning Machine Learning,
+                        Web Development, and Software Development. My educational journey has equipped me with a robust
+                        skill set and a strong foundation in computer science. <br>
+
+                        My passion lies in the creation of impactful products that not only deliver exceptional results
+                        but also provide a seamless and enjoyable user experience. I thrive on the challenge of solving
+                        complex problems in the tech industry<br>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('experiance')">Experiance</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span> <br> C, Java, Python, JavaScript, HTML, CSS, SQL</li>
+                            <li><span>Databases</span> <br> MySQL, MangoDB</li>
+                            <li><span>Web Technologies</span> <br> HTML5, CSS, Express, WordPress</li>
+                            <li><span>Frameworks</span> <br> NodeJS, React.js, Next.js</li>
+                            <li><span>Tools</span> <br> GitHub, SAP ECC, S/4 HANA, Node.js, VS Code, Docker</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiance">
+                        <ul>
+                            <li><span>Yash Technologies Private Limited</span> ( Jan 2020 - Dec 2022 ) <br> Complete
+                                end-to-end user administration that includes Administer Authorized Users
+                                (add/delete/lock/modify), Role Maintenance, Authorization Profiles,
+                                assigning User Groups, adding of roles to users. Modifying user authorization access,
+                                and Analysing User
+                                authorization errors etc</li>
+                            <li><span>Phoenix Business Consulting</span> ( April 2019 - Jan 2020 ) <br> Architected and
+                                developed an automation tool for executing scripts (Mongo, Python, and Node) in
+                                production,
+                                resulting in a 90% improvement in DevOps efficiency</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Florida International University</span> ( Jan 2023 - Present ) <br> Master of
+                                Science - Computer and information Science <br> Current GPA: 4.0/4.0</li>
+                            <li><span>Jawaharlal Nehru Technological University Hyderabad - CVR</span> ( July 2015 -
+                                June 2019 ) <br> Bachelors of Technology - Computer Science and Engineering <br> GPA:
+                                8.33/10</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------Services--------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code fa-beat"></i>
+                    <h2>Web Design</h2>
+                    <p>Crafting compelling web experiences that merge creativity with functionality. From sleek user interfaces to responsive layouts, I specialize in designing visually captivating websites that engage and delight users. My focus is on delivering intuitive navigation and seamless interaction, ensuring a memorable online journey for every visitor.</p>
+                    <a href="https://www.linkedin.com/in/shabazuddin123/" target="_blank">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple fa-beat"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Crafting intuitive and visually engaging user interfaces (UI) and experiences (UX) to enhance digital interactions. Combining user-centric design principles with aesthetic appeal to optimize usability and satisfaction. Creating seamless, delightful journeys for users across web and mobile platforms.</p>
+                    <a href="https://github.com/MohammadShabazuddin" target="_blank">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store fa-beat"></i>
+                    <h2>App Design</h2>
+                    <p>Experience seamless connectivity with our innovative app design. Sleek interface, intuitive navigation, and dynamic features ensure optimal user engagement. From effortless task management to personalized experiences, our app enhances efficiency and satisfaction. Elevate your digital presence with our tailored solutions, designed to exceed expectations and amplify user experience.</p>
+                    <a href="https://www.linkedin.com/in/shabazuddin123/" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------Portfolio------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Food Ordering App</h3>
+                        <p>Developed a full stack web application project for food delivery. For front-end design, the project makes use of HTML, CSS, and React JS. Combining the Node JS, Express JS, MongoDB and Stripe Payment to construct the backend.</p>
+                        <a href="https://food-ordering-website-silk.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-fade"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>E-Commerce App</h3>
+                        <p>An e-commerce website developed using HTML, CSS, and JavaScript. This project showcases a user-friendly interface for browsing products, adding items to cart, and processing orders seamlessly. Experience smooth navigation and responsive design for an enhanced shopping experience.</p>
+                        <a href="https://e-commerce-website-psi-sand.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-fade"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Netflix Clone</h3>
+                        <p>This project is a front-end clone of the popular streaming platform, Netflix. It aims to recreate the immersive and user-friendly interface of Netflix.</p>
+                        <a href="https://netflix-clone-red-iota.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-fade"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/shabazuddin123/" class="btn" target="_blank">See more</a>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------Contact-------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-envelope"></i></i>shabazuddin.198@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i>(305)-815-9064</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/shabazuddin786" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/shabazuddin123/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="images/Shabazuddin_Mohammad (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  placeholder="Your Message" rows="6"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------footer------------------- -->
+    <div class="copyright">
+        <p>Copyright &copy; 2024 Shabazuddin Mohammad. All rights reserved. </p>
+    </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu")
+        function openmenu(){
+            sidemeu.style.right = '0';
+        }
+        function closemenu(){
+            sidemeu.style.right = '-200px';
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxENO5f-IhXppXummHCYNShRJi3xQ3LtfzzCK5mP3QoAHiFgSySXba_oJQ-96o2otipGQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg =  document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
